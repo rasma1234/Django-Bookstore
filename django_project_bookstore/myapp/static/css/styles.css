@@ -1,0 +1,157 @@
+/* Reset some default browser styles */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Arial", sans-serif;
+    background-color: #f5f5f5; /* Soft gray background */
+    color: #333;
+    position: relative;
+    min-height: 100vh;
+    transition: background-color 0.3s; /* Background color transition */
+}
+
+header {
+    background-color: #0074d9;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    transition: background-color 0.3s; /* Header background color transition */
+}
+
+header:hover {
+    background-color: #005b9f; /* Darker color on hover */
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff; /* White background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+a {
+    color: #000; /* Change link color to black */
+    text-decoration: underline;
+    transition: color 0.3s; /* Link color transition */
+}
+
+a:active {
+    background-color: #005b9f;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #000; /* Change link color to black on hover */
+}
+
+ul {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    list-style-type: disc;
+    text-align: left;
+}
+
+/* Position the Bookstore at the bottom-center of the screen */
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #0074d9;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Styles for the form */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    margin-top: 20px;
+}
+
+.styled-form-group {
+    margin-bottom: 20px;
+}
+
+.styled-form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.styled-form-group input, .styled-form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.styled-form-group input[type="submit"] {
+    background-color: #0074d9;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.styled-form-group input[type="submit"]:hover {
+    background-color: #005b9f;
+}
+
+/* Space between Save button and Cancel link */
+form input[type="submit"] + a {
+    margin-top: 10px;
+    display: inline-block;
+    text-decoration: none;
+    color: #0074d9;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+/* Styles for the Cancel link */
+form input[type="submit"] + a:hover {
+    text-decoration: underline;
+}
+
+/* Center the content-container both horizontally and vertically */
+.content-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+    margin-top: 20px; /* Add margin to push it down a bit */
+}
+
+/* Right-align the login and signup links */
+main a {
+    text-align: right;
+}
+
+main a:last-child {
+    margin-right: 0;
+}

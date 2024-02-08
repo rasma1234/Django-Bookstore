@@ -1,0 +1,14 @@
+{% extends 'books/base.html' %}
+
+{% block title %}{{ book.title }} - Bookstore{% endblock %}
+
+{% block content %}
+    <h1>{{ book.title }}</h1>
+    <p><strong>Author:</strong> {{ book.author }}</p>
+    <p><strong>Description:</strong> {{ book.description }}</p>
+    <p><strong>Published Date:</strong> {{ book.published_date }}</p>
+    <p><strong>Price:</strong> ${{ book.price }}</p>
+    <a href="{% url 'book_edit' book.pk %}">Edit</a>
+    <a href="{% url 'book_delete' book.pk %}">Delete</a>
+    <a href="{% url 'book_list' %}">Back to List</a>
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends 'books/base.html' %}
+
+{% block title %}{% if book %}Edit Book{% else %}Create Book{% endif %} - Bookstore{% endblock %}
+
+{% block content  %}
+    <h1>{% if book %}Edit Book{% else %}Create Book{% endif %}</h1>
+    <form method="post">
+        {% csrf_token %}
+        <div class="styled-form-group">{{form.title.label_tag}}
+            {{form.title}}  
+        </div>
+        <div class="styled-form-group">{{form.author.label_tag}}
+            {{form.author}}  
+        </div>
+        <div class="styled-form-group">{{form.description.label_tag}}
+            {{form.description}}  
+        </div>
+        <div class="styled-form-group">{{form.published_date.label_tag}}
+            {{form.published_date}}  
+        </div>
+        <div class="styled-form-group">{{form.price.label_tag}}
+            {{form.price}}  
+        </div>
+        <input type="submit" value="Save">
+    </form>
+    <a href="{% url 'book_list' %}">Cancel</a>
+{% endblock %}
